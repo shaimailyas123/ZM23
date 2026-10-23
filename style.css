@@ -1,0 +1,237 @@
+/* ---------- PAGE LAYOUT ---------- */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ---------- PAGE ONE ---------- */
+
+.page-one {
+    width: min(500px, 90vw);
+    box-sizing: border-box;
+
+    padding: 40px;
+    border-radius: 30px;
+
+    background: white;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+
+    text-align: center;
+}
+
+.page-one h1 {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.page-one p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+button {
+    display: block;
+    width: 100%;
+
+    margin-top: 25px;
+    padding: 18px;
+
+    font-size: 17px;
+    border: none;
+    border-radius: 50px;
+
+    cursor: pointer;
+    background: #ed1cd1;
+    color: white;
+
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+/* ---------- QUESTION ONE ---------- */
+
+.question-one {
+    display: none;
+    width: min(500px, 90vw);
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.question-one h2 {
+    font-size: 32px;
+}
+
+.question-one p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.error-message {
+    color: red;
+    font-size: 16px;
+    min-height: 24px;
+}
+
+.wrong {
+    background: red !important;
+}
+
+/* ---------- QUESTION TWO ---------- */
+
+.question-two {
+    display: none;
+    width: min(500px, 90vw);
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.question-two h2 {
+    font-size: 32px;
+}
+
+.question-two p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ---------- QUESTION THREE ---------- */
+
+.question-three {
+    display: none;
+    width: min(500px, 90vw);
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.question-three h2 {
+    font-size: 32px;
+}
+
+.question-three p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ---------- QUESTION FOUR ---------- */
+
+.question-four {
+    display: none;
+    width: min(500px, 90vw);
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.question-four h2 {
+    font-size: 32px;
+}
+
+.question-four p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ---------- QUESTION FIVE ---------- */
+
+.question-five {
+    display: none;
+    width: min(500px, 90vw);
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.question-five h2 {
+    font-size: 32px;
+}
+
+.question-five p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ---------- BIRTHDAY PAGE ---------- */
+
+.birthday-page {
+    display: none;
+    width: min(650px, 90vw);
+    max-height: 85vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 35px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.birthday-page h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.birthday-page p {
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+
+/* ---------- CONFETTI ---------- */
+
+#confetti-container {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.confetti {
+    position: absolute;
+    top: -20px;
+    width: 10px;
+    height: 14px;
+    animation: confetti-fall 3s linear forwards;
+}
+
+@keyframes confetti-fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+    }
+}

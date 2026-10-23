@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>11 Years of Friendship</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PAGE 1 -->
+
+    <div class="page-one">
+
+        <h1>Damn, 23!</h1>
+
+        <p>
+            Let's test our 11 years of friendship.
+            <br><br>
+            I have prepared a little something for you.
+        </p>
+
+        <button onclick="startQuiz()">Let's Begin</button>
+
+    </div>
+
+<!-- QUESTION 1 -->
+
+<div class="question-one">
+
+    <h2>Question 1</h2>
+
+    <p>Which year did we meet at school?</p>
+
+    <button onclick="checkAnswerOne(this, false)">2015</button>
+
+    <button onclick="checkAnswerOne(this, true)">2014</button>
+
+    <p id="error-one" class="error-message"></p>
+
+</div>
+
+<!-- QUESTION 2 -->
+
+<div class="question-two">
+
+    <h2>Question 2</h2>
+
+    <p>Which grade were we together in?</p>
+
+    <button onclick="checkAnswerTwo(this, true)">Grade 8</button>
+
+    <button onclick="checkAnswerTwo(this, false)">Grade 7</button>
+
+    <p id="error-two" class="error-message"></p>
+
+</div>
+
+<!-- QUESTION 3 -->
+
+<div class="question-three">
+
+    <h2>Question 3</h2>
+
+    <p>Were we ever part of the same team's relay in clusters?</p>
+
+    <button onclick="checkAnswerThree(this, false)">Yes</button>
+
+    <button onclick="checkAnswerThree(this, true)">No</button>
+
+    <p id="error-three" class="error-message"></p>
+
+</div>
+
+<!-- QUESTION 4 -->
+
+<div class="question-four">
+
+    <h2>Question 4</h2>
+
+    <p>Which year did we fight? 🤣</p>
+
+    <button onclick="checkAnswerFour(this, false)">2018</button>
+
+    <button onclick="checkAnswerFour(this, true)">2017</button>
+
+    <p id="error-four" class="error-message"></p>
+
+</div>
+
+<!-- QUESTION 5 -->
+
+<div class="question-five">
+
+    <h2>Question 5</h2>
+
+    <p>
+        During the school days, what did you and the gang bully me about?
+    </p>
+
+    <button onclick="checkAnswerFive(this, false)">
+        Cockroaches
+    </button>
+
+    <button onclick="checkAnswerFive(this, false)">
+        Cracked mobile screen
+    </button>
+
+    <button onclick="checkAnswerFive(this, false)">
+        Sleeping
+    </button>
+
+    <button onclick="checkAnswerFive(this, true)">
+        All of the above
+    </button>
+
+    <p id="error-five" class="error-message"></p>
+
+</div>
+
+<!-- BIRTHDAY MESSAGE -->
+
+<div class="birthday-page">
+
+    <h1>Damn, 23! ❤️</h1>
+
+    <p>
+        I have been wanting to do this for the past couple of months
+        <br><br>
+
+        In these 11 years of knowing you, we have had our own ups and downs in friendship. Looking back at all those pointless fights and the egos we held on to, it’s actually so funny now. But I guess those moments too are what made our friendship journey all the more memorable.
+        <br><br>
+
+        The past couple of months, especially, have been more of a mental battle for me than a physical one. And through it all, you have been there, putting up with my 28,394 questions, doubts, overthinking, and all the unnecessarily explicit details I somehow manage to include in every conversation
+        <br><br>
+
+        Honestly, I don’t think I could have relied on just anyone the way I relied on you during that time. So, thank you for being there when I needed you the most, for listening to me, and for helping me get through each day in your own way. It means more to me than I can properly explain.
+        <br><br>
+
+        And here's to replying to texts after 4–5 business days, our annual phone calls, and the meet-ups that never happen 😂 I hope all of that changes for the better now! 🤗❤️
+    </p>
+
+</div>
+
+<div id="confetti-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
